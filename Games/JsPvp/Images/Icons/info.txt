@@ -1,0 +1,3 @@
+These are the icons i use in the game
+(Attack, Defend, Escape etc.)
+Most are 64 * 64 pixel art images
