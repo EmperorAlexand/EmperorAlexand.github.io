@@ -1,0 +1,70 @@
+/*
+
+It doensn't work i hate my life
+
+@keyframes expGain {
+  from {color: limegreen;}
+  to {color: black;}
+}
+
+@keyframes expBarGain {
+
+  from {
+    -webkit-progress-value background-color: limegreen;
+  }
+
+  to {
+    -webkit-progress-value background-color: blue;
+  }
+}
+
+.expanimation {
+  animation: expGain 2s;
+}
+
+.expbaranimation {
+  animation: expBarGain 2s;
+}
+
+:root {
+  --background: #111;
+  --progress-background: #222;
+  --progress-border: #333;
+  --progress-step-0: #F00;
+  --progress-step-33: #FF0;
+  --progress-step-66: #0F0;
+}
+
+progress {
+  background-color: lime;
+}
+
+progress.color-progress {
+  -webkit-appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: none;
+  border: 3px solid rgba(200, 200, 200, 0.6);
+}
+
+progress::-moz-progress-bar {
+  background-color: limegreen;
+  border: 3px solid rgba(200, 200, 200, 0.6);
+}
+
+progress.color-progress[data-step="0"]::-webkit-progress-value {
+  background-color: var(--progress-step-0);
+  border-radius: 0.25em;
+}
+
+progress.color-progress[data-step="33"]::-webkit-progress-value {
+  background-color: var(--progress-step-33);
+  border-radius: 0.25em;
+}
+
+progress.color-progress[data-step="66"]::-webkit-progress-value {
+  background-color: var(--progress-step-66);
+  border-radius: 0.25em;
+}
+*/

@@ -1,0 +1,136 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* CSS */
+html {
+  height: 100%;
+}
+
+body {
+  height: 98%;
+  margin: 0;
+  background-image: url("Images/Backgrounds/bigbackground.png");
+  background-repeat: repeat;
+  background-size: 32px;
+  image-rendering: pixelated;
+  margin-left: 5px;
+  padding-top: 5px;
+  font-family: 'Kavoon', cursive;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  image-rendering: pixelated;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+h6, h5, h4, h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+input {
+  text-align: center;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 5px;
+  border-radius: 10px;
+  font-family: 'Kavoon', cursive;
+}
+
+main {
+  text-align: center;
+  height: 100%;
+  width: 32%;
+  border: 3px solid black;
+  background-color: rgba(230, 230, 230, 0.75);
+  float: left;
+}
+
+.geardata {
+  display: inline-block;
+  margin-top: 5px;
+  background-color: rgba(240, 240, 240, 0.5);
+  border: 3px solid rgb(190, 190, 190);
+  width: 30%;
+  padding: 10px;
+}
+
+#secondblock, #thirdblock {
+  width: 32%;
+  height: 100%;
+  margin-left: 33%;
+  text-align: center;
+  background-color: rgba(230, 230, 230, 0.75);
+  border: 3px solid black;
+}
+
+#thirdblock {
+  margin-left: 66%;
+  margin-top: 5px;
+  position: absolute;
+  top: 0;
+  height: 98%;
+}
+
+#secondblock h6 {
+  margin-bottom: 20px;
+}
+
+#popups {
+  border: 5px solid rgba(120, 120, 120, 0.7);
+  background-color: rgba(200, 200, 200, 0.4);
+  position: absolute;
+  bottom: 0;
+  width: 29.6%;
+  text-align: center;
+  overflow: hidden;
+  height: 200px;
+  max-height: 200px;
+  margin-left: 1%;
+  padding-bottom: 5px;
+}
+
+#popups li {
+  border: 3px solid gray;
+  background-color: rgba(240, 240, 240, 0.5);
+  width: 95%;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+#inventory td {
+  border: 2px solid rgba(240, 240, 240, 0.8);
+  background-color: rgba(230, 230, 230, 0.6);
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+#popupgradient {
+  background: linear-gradient(rgba(100, 100, 100, 0.7), rgba(0, 0, 0, 0));
+  width: 29.7%;
+  height: 50px;
+  bottom: 0;
+  margin-bottom: 177px;
+  margin-left: 1.3%;
+  position: absolute;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  left: -10px;
+}

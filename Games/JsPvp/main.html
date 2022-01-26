@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Js Pvp</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="progress.css">
+    <link rel="icon" href="Images\Icons\attack-icon.png">
+  </head>
+  <body>
+    <main class="mainblock">
+      <div id="profile">
+        <input id="name" value=""><br>
+        <h4 id="level"></h4><br>
+        <progress value="0" max="10" id="expbar"></progress>
+        <h6 id="expsubtitle" style="margin-bottom:5px;">EXP</h6>
+        <progress value="100" max="100" id="healthbar" class="color-progress"></progress>
+        <h6 id="hpsubtitle">HP</h6><br>
+        <div style="display:inline-block;">
+          <div style="display:flex; align-items:center;">
+            <h6 id="gold" style="margin-right:5px;">Gold: 0</h6>
+            <img height="16" width="16" src="Images/Icons/gold-icon.png">
+          </div>
+        </div>
+        <ul id="stats">
+          <li id="atk">0 Atk</li><img src="Images/Icons/attack-icon.png">
+          <li id="dfn">0 Dfn</li><img src="Images/Icons/defense-icon.png">
+          <li id="spd">0 Spd</li><img src="Images/Icons/speed-icon.png">
+        </ul>
+        <div id="weapondata" class="geardata">
+          <img src="" id="weaponimage" width="128">
+          <h4 id="weaponname">WeaponName</h4>
+        </div>
+        <div id="armordata" class="geardata">
+          <img src="" id="armorimage" width="128">
+          <h4 id="armorname">ArmorName</h4>
+        </div>
+      </div>
+      <br><br>
+      <div class="data">
+        <button id="savebutton" onclick="save()">Save</button>
+        <button id="loadbutton" onclick="load()">Load</button>
+        <button id="resetbutton" onclick="reset()">Reset</button>
+        <button id="exportbutton" onclick="exportSave()">Export</button>
+        <button id="importbutton" onclick="importSave()">Import</button>
+        <button id="fightbutton", onclick="startFight()">Fight</button>
+        <button id="bossbutton" onclick="startBoss()">Bossfight</button>
+        <button id="pvpbutton" onclick="startPvp()">Pvp</button>
+      </div>
+    </main>
+    <div id="secondblock">
+      <div id="top"></div>
+      <div id="bottom">
+        <ul id="popups">
+
+        </ul>
+        <div id="popupgradient"></div>
+      </div>
+    </div>
+    <div id="thirdblock">
+      <table id="inventory">
+        <tr>
+          <td>
+            <img src="Images/Icons/lock-icon.png" width="64" id="fireshardimg">
+            <h6 id="fireshardamount">0</h6>
+          </td>
+          <td>
+            <img src="Images/Icons/lock-icon.png" width="64" id="iceshardimg">
+            <h6 id="iceshardamount">0</h6>
+          </td>
+          <td>
+            <img src="Images/Icons/lock-icon.png" width="64" id="jungleshardimg">
+            <h6 id="jungleshardamount">0</h6>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>

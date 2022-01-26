@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>You are dead</title>
+    <link rel="icon" href="Images/Enemies/Skeleton.png">
+    <link rel="stylesheet" href="death.css">
+    <!--link rel="stylesheet" href="buttons.css"-->
+  </head>
+  <body>
+    <h2>You are dead.</h2>
+    <p id="timer"></p>
+  </body>
+  <script type="text/javascript">
+
+  //Decrement death clock
+  var buttoncreated = false;
+  setInterval(function() {
+    if (localStorage.deathclock > 0) {
+      localStorage.deathclock--;
+      document.getElementById('timer').innerHTML = 'You will be revived in ' + String(localStorage.deathclock) + ' seconds.';
+      document.title = 'You are dead [' + String(localStorage.deathclock) + ']';
+      return;
+    }
+    if (!buttoncreated) {
+      var button = document.createElement('button');
+      document.body.appendChild(button);
+      button.innerHTML = 'Revive ' + JSON.parse(atob(localStorage.User)).name;
+      button.setAttribute('onclick', 'revive()');
+      document.title = 'You are dead [Revive ready!]';
+      buttoncreated = true;
+    }
+  }, 1000);
+
+  //Revive function
+  function revive() {
+    var User = JSON.parse(atob(localStorage.User));
+    User.hp = 100;
+    localStorage.User = btoa(JSON.stringify(User));
+    window.location.href = 'main.html';
+  }
+
+  </script>
+</html>

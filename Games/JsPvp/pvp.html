@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PVP</title>
+    <link rel="stylesheet" href="pvp.css">
+    <link rel="stylesheet" href="progress.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="icon" href="Images\Icons\attack-icon.png">
+  </head>
+  <body>
+    <div class="player mainblock" id="player1">
+      <h2 id="p1name">Player 1 Name</h2>
+      <h4 id="p1level">Player 1 Level</h4>
+      <progress value="0" max="100" id="p1expbar"></progress>
+      <h6 id="p1expsubtitle">Player 1 EXP</h6>
+      <progress value="0" max="100" id="p1hpbar"></progress>
+      <h6 id="p1hpsubtitle">Player 1 HP</h6>
+      <ul id="p1stats">
+        <li id="p1atk">0 Atk</li><img src="Images/Icons/attack-icon.png">
+        <li id="p1dfn">0 Dfn</li><img src="Images/Icons/defense-icon.png">
+        <li id="p1spd">0 Spd</li><img src="Images/Icons/speed-icon.png">
+      </ul>
+      <div id="p1weapondata" class="geardata">
+        <img src="" id="p1weaponimage" width="128">
+        <h4 id="p1weaponname">P1 WeaponName</h4>
+      </div>
+      <div id="p1armordata" class="geardata">
+        <img src="" id="p1armorimage" width="128">
+        <h4 id="p1armorname">P1 ArmorName</h4>
+      </div>
+    </div>
+
+    <div class="mainblock" id="centre">
+      <p id="p1rating">Player 1 Rating</p>
+      vs
+      <p id="p2rating">Player 2 Rating</p>
+    </div>
+
+    <div class="player mainblock" id="player2">
+      <h2 id="p2name">Player 2 Name</h2>
+      <h4 id="p2level">Player 2 Level</h4>
+      <progress value="0" max="100" id="p2expbar"></progress>
+      <h6 id="p2expsubtitle">Player 2 EXP</h6>
+      <progress value="0" max="100" id="p2hpbar"></progress>
+      <h6 id="p2hpsubtitle">Player 2 HP</h6>
+      <ul id="p2stats">
+        <li id="p2atk">0 Atk</li><img src="Images/Icons/attack-icon.png">
+        <li id="p2dfn">0 Dfn</li><img src="Images/Icons/defense-icon.png">
+        <li id="p2spd">0 Spd</li><img src="Images/Icons/speed-icon.png">
+      </ul>
+      <div id="p2weapondata" class="geardata">
+        <img src="" id="p2weaponimage" width="128">
+        <h4 id="p2weaponname">P2 WeaponName</h4>
+      </div>
+      <div id="p2armordata" class="geardata">
+        <img src="" id="p2armorimage" width="128">
+        <h4 id="p2armorname">P2 ArmorName</h4>
+      </div>
+    </div>
+    <script src="pvp.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/*CSS*/
+html {
+  height: 100%;
+}
+
+body {
+  height: 98%;
+  background-image: url('Images/Backgrounds/bigbackground.png');
+  image-rendering: pixelated;
+  background-repeat: repeat;
+  background-size: 48px;
+  text-align: center;
+  font-family: 'Kavoon', cursive;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  image-rendering: pixelated;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+h6, h5, h4, h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.mainblock {
+  width: 32.5%;
+  height: 99%;
+  margin: 0;
+  float: left;
+  clear: none;
+  border: 3px solid black;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.geardata {
+  display: inline-block;
+  margin-top: 5px;
+  background-color: rgba(240, 240, 240, 0.5);
+  border: 3px solid rgb(190, 190, 190);
+  width: 30%;
+  padding: 10px;
+}
+
+#centre {
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+}

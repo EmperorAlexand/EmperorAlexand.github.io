@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+
+button {
+  margin-top: 5px;
+  font-family: 'Kavoon', cursive;
+}
+
+.actionbutton {
+  border: none;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.attackbutton {
+  background-color: rgb(100, 150, 240);
+  box-shadow: 4px 4px 0px rgb(120, 120, 140);
+}
+
+.defendbutton {
+  background-color: rgb(220, 20, 60);
+  box-shadow: 4px 4px 0px rgb(140, 120, 120);
+}
+
+.escapebutton {
+  background-color: rgb(50, 205, 50);
+  box-shadow: 4px 4px 0px rgb(120, 140, 120);
+}
+
+.attackbutton:hover {
+  background-color: rgb(80, 130, 220);
+  box-shadow: 4px 4px 0px rgb(110, 110, 130);
+}
+
+.defendbutton:hover {
+  background-color: rgb(200, 10, 50);
+  box-shadow: 4px 4px 0px rgb(130, 110, 110);
+}
+
+.escapebutton:hover {
+  background-color: rgb(40, 190, 40);
+  box-shadow: 4px 4px 0px rgb(110, 130, 110);
+}
+
+.attackbutton:active {
+  margin-top: 12px;
+  margin-left: 7px;
+  background-color: rgb(60, 110, 200);
+  box-shadow: 2px 2px 0px rgb(100, 100, 120);
+}
+
+.defendbutton:active {
+  margin-top: 12px;
+  margin-left: 7px;
+  background-color: rgb(180, 0, 40);
+  box-shadow: 2px 2px 0px rgb(120, 100, 100);
+}
+
+.escapebutton:active {
+  margin-top: 12px;
+  margin-left: 7px;
+  background-color: rgb(30, 170, 30);
+  box-shadow: 2px 2px 0px rgb(100, 120, 100);
+}
