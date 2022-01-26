@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+body {
+    background-image: url("../../Images/bigbackground.png");
+    background-size: 32px;
+    image-rendering: pixelated;
+    text-align: center;
+    font-family: 'Dela Gothic One', cursive;
+}
+
+h2 {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: 3px solid gray;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 10px;
+}
+
+ul li p {
+    display: inline;
+}
+
+button {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgb(50, 255, 50);
+    box-shadow:
+        0 0 0 2px lime,
+        0 -1 0 2px gray;
+    color: white;
+    font-family: 'Dela Gothic One', cursive;
+    outline: rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,0);
+    -moz-box-shadow: 0 5px 15px rgba(0,0,0,0);
+    -o-box-shadow: 0 5px 15px rgba(0,0,0,0);
+    border-radius: 3px;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(0, 255, 0);
+    box-shadow:
+        0 0 0 3px lime,
+        0 1 0 2px gray;
+}

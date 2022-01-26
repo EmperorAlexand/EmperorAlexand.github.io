@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Survival simulator</title>
+        <link rel="stylesheet" href="survivalsimulator.css">
+        <link rel="icon" href="Images/pageicon.png">
+    </head>
+    <body>
+        <script src="survivalsimulator.js" charset="utf-8"></script>
+        <button onclick="addChar()">Add character</button>
+        <button onclick="remChar(characters[characters.length - 1])">Remove character</button>
+        <button onclick="randomizeCharacters()">Randomize</button>
+        <button onclick="toggleSurNames()" id="surnames">Surnames: On</button>
+        <ul id="characters">
+        </ul>
+        <div style="text-align:center;">
+            <button onclick="startGame()">Start game</button>
+        </div>
+    </body>
+</html>
