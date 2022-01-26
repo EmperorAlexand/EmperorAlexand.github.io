@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+::selection {
+  background-color: lightblue;
+  border: 3px solid black;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    background-image: url("Images/bigbackground.png");
+    background-size: 32px;
+    image-rendering: pixelated;
+}
+
+header {
+    letter-spacing: 0.2em;
+    text-shadow: 1.5px 1.5px #858585;
+    font-size: 120%;
+    font-family: 'Dela Gothic One', cursive;
+}
+
+main {
+    text-align: left;
+}
+
+footer {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 60%;
+}
+
+ul {
+  list-style-type: none;
+  justify-content: space-between;
+  display: flex;
+  text-align: center;
+  padding: 0;
+}
+
+li {
+  width: 33%;
+  border: 3px solid black;
+  background-color: rgba(200, 200, 200, 0.5);
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+li:hover {
+  background-color: rgba(200, 200, 200, 0.9);
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: lightblue;
+  box-shadow: 5px 5px gray;
+  border: 0;
+  font-family: 'Dela Gothic One', cursive;
+}
+
+button:hover {
+  background-color: lightSkyBlue;
+}
+
+button:active {
+  background-color: mediumSlateBlue;
+  margin-left: 3px;
+  margin-top: 3px;
+  box-shadow: 2px 2px gray;
+}
+
+p {
+  font-family: 'Dela Gothic One', cursive;
+  font-weight: lighter;
+  font-size: 10px;
+}
+
+.main-block {
+    width: 96%;
+    border: 5px solid black;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    box-shadow:
+        0 0 0 10px hsl(0, 0%, 80%),
+        0 0 0 15px hsl(0, 0%, 90%);
+    background-color: rgba(255, 255, 255, 0.5);
+}
