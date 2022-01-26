@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Code decrypter</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <main>
+      <div>
+        <h3>Decrypt string</h3>
+        <p>Our AI will scan your string to detect any possible encryption.</p>
+        <p id="decryptionoutputtype">Current output type: Text</p>
+        <input type="text" value="" placeholder="Code" id="code-input">
+        <button onclick="decryptCode()">Scan</button>
+        <button onclick="resetDecryption()">Reset</button>
+        <button onclick="toggleDecryptionOutput()">Toggle output type</button>
+        <p id="decrypted-code"></p>
+      </div>
+      <div>
+        <h3>Decrypt substitution</h3>
+        <input value="" placeholder="Enter encrypted message" id="ceasar-input">
+        <button onclick="decryptCeasar()">Decrypt</button>
+        <p id="decrypted-ceasar"></p>
+      </div>
+      <div>
+        <h3>Encrypt string</h3>
+        <p>Enter a string and choose from the many provided encryption methods.</p>
+        <input type="text" value="" placeholder="Text" id="text-input">
+        <select id="encryption">
+        </select>
+        <button onclick="encryptText()">Encrypt</button>
+        <button onclick="resetEncryption()">Reset</button>
+        <p id="text-output"></p>
+      </div>
+    </main>
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>

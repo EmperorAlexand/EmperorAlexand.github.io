@@ -1,0 +1,31 @@
+<!--Raven cipher-->
+<!--If you were not given access, please leve now.-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Raven</title>
+  </head>
+  <body>
+    <input value="" id="raven-input">
+    <button id="encrypt()">Encrypt</button>
+    <button type="decrypt()">Decrypt</button>
+    <p id="raven-output"></p>
+    <script>
+
+      var input = document.getElementById("raven-input").value;
+      var output = document.getElementById("raven-output");
+
+      function encrypt() {
+        input ^ "RAVEN";
+        output.innerHTML = input;
+      }
+
+      function decrypt() {
+        
+      }
+
+    </script>
+  </body>
+</html>
