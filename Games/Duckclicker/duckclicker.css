@@ -1,0 +1,126 @@
+body {
+    background-image: url("Images/background.png");
+    background-size: 32px;
+    image-rendering: pixelated;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.itemimage {
+    width: 128px;
+    height: 128px;
+    image-rendering: pixelated;
+    margin-left: 5px;
+}
+
+.buybutton {
+    margin-top: 5px;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.itemdatawrapper {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.mainblock {
+    width: 30%;
+}
+
+#leftcontainer {
+    float: left;
+    min-width: 40%;
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 98%;
+}
+
+#duckconatiner {
+    text-align: center;
+    position: relative;
+}
+
+#duckhitbox {
+    height: 200px;
+    width: 330px;
+    position: absolute;
+    left: 200px;
+    bottom: 80px;
+}
+
+#mainduck {
+    display: inline-block;
+    margin-top: 15px;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#duckdisplay {
+    text-align: center;
+    background-color: rgba(250, 250, 250, 0.7);
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 1%;
+    border-radius: 3px;
+    width: 98%;
+}
+
+#dpsdisplay {
+    text-align: center;
+    background-color: rgba(250, 250, 250, 0.7);
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 2%;
+    border-radius: 3px;
+    width: 96%;
+}
+
+#shop {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#shop li {
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 98%;
+    margin-left: 1%;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+#shop li p {
+    margin-right: 15px;
+}
+
+#shop li h4 {
+    margin: 0;
+}
+
+#rightcontainer {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-left: 5px;
+    height: 98%;
+}
+
+#rightcontainer button {
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: 0 0 0 2px gray;
+    border: none;
+}

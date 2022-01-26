@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" style="height:100%;">
+    <head>
+        <meta charset="utf-8">
+        <title>Duck clicker</title>
+        <link rel="stylesheet" href="duckclicker.css">
+    </head>
+    <body>
+        <div id="leftcontainer" class="mainblock">
+            <h2 id="duckdisplay">0 Ducks</h2>
+            <h4 id="dpsdisplay">0.0 Ducks per second</h4>
+            <div id="duckconatiner">
+                <div id="duckhitbox" onclick="mainDuckClick();" onmouseover="resize('mainduck', 390, 390)" onmouseout="resize('mainduck', 400, 400)" onmousedown="resize('mainduck', 380, 380)" onmouseup="resize('mainduck', 390, 390)"></div>
+                <img src="Images/mainduck.png" height="400px" width="400px" id="mainduck">
+            </div>
+        </div>
+        <div id="middlecontainer" class="mainblock">
+            <ul id="shop">
+                <li id="item_autoclicker">
+                    <img src="Images/autoclicker.png" id="image_autoclicker" class="itemimage">
+                    <div class="itemdatawrapper">
+                        <h4>Autoclicker</h4>
+                        <div class="flexbox">
+                            <p id="amount_autoclicker">Owned: 0</p>
+                            <p id="cost_autoclicker">Cost: 15</p>
+                        </div>
+                        <button onclick="buyItem(0)" class="buybutton">Buy Autoclicker</button>
+                    </div>
+                </li>
+                <li id="item_pond">
+                    <img src="Images/pond.png" id="image_pond" class="itemimage">
+                    <div class="itemdatawrapper">
+                        <h4>Pond</h4>
+                        <div class="flexbox">
+                            <p id="amount_pond">Owned: 0</p>
+                            <p id="cost_pond">Cost: 120</p>
+                        </div>
+                        <button onclick="buyItem(1)" class="buybutton">Buy Pond</button>
+                    </div>
+                </li>
+                <li id="item_lake">
+                    <img src="Images/lake.png" id="image_lake" class="itemimage">
+                    <div class="itemdatawrapper">
+                        <h4>Lake</h4>
+                        <div class="flexbox">
+                            <p id="amount_lake">Owned: 0</p>
+                            <p id="cost_lake">Cost: 3000</p>
+                        </div>
+                        <button onclick="buyItem(2)" class="buybutton">Buy Lake</button>
+                    </div>
+                </li>
+                <li id="item_sea">
+                    <img src="Images/sea.png" id="image_sea" class="itemimage">
+                    <div class="itemdatawrapper">
+                        <h4>Sea</h4>
+                        <div class="flexbox">
+                            <p id="amount_sea">Owned: 0</p>
+                            <p id="cost_sea">Cost: 50000</p>
+                        </div>
+                        <button onclick="buyItem(3)" class="buybutton">Buy Sea</button>
+                    </div>
+                </li>
+                <li id="item_ocean">
+                    <img src="Images/ocean.png" id="image_ocean" class="itemimage">
+                    <div class="itemdatawrapper">
+                        <h4>Ocean</h4>
+                        <div class="flexbox">
+                            <p id="amount_ocean">Owned: 0</p>
+                            <p id="cost_ocean">Cost: 1 Million</p>
+                        </div>
+                        <button onclick="buyItem(4)" class="buybutton">Buy Ocean</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="rightcontainer" class="mainblock">
+            <button onclick="saveGame()">Save</button>
+            <button onclick="loadGame()">Load</button>
+            <div id="upgrades">
+                <ul ="upgrade-ul">
+                </ul>
+            </div>
+        </div>
+        <script src="duckclicker.js" charset="utf-8"></script>
+    </body>
+</html>
