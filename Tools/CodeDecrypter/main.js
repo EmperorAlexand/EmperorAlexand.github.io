@@ -314,3 +314,8 @@ function decryptCeasar() {
     output.innerHTML = string;
   } else return 0;
 }
+
+//Reset ceasar output
+function resetCeasar() {
+  g("decrypted-ceasar").innerHTML = "";
+}
